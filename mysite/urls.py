@@ -19,6 +19,5 @@ from myweb import views
 
 urlpatterns = [
     path('', views.index),
-    path('sketchy', views.sketchy),
     path('admin/', admin.site.urls),
 ]
