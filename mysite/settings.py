@@ -25,7 +25,7 @@ SECRET_KEY = 'j_(xpe#w$-!dg0exd(84ysj$gx8tk1glte=$$ezzh=qakw7pwr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Pratchayaanan.pythonanywhere.com']
+ALLOWED_HOSTS = ['Pratchayaanan.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bangkok'
 
 USE_I18N = True
 

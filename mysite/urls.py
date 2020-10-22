@@ -20,4 +20,12 @@ from myweb import views
 urlpatterns = [
     path('', views.index),
     path('admin/', admin.site.urls),
+    path('login', views.login, name='login'),
+    path('login_active', views.login_active, name='login'),
+    path('logout', views.logout_active, name='logout'),
+    path('signup',views.signup, name='sign'),
+    path('signup_active', views.signup_active, name='sign'),
+    path('landscape', views.landscape, name='landscape'),
+    path('portrait', views.portrait, name='portrait'),
+    path('food', views.food, name='food'),
 ]
