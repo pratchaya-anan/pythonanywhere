@@ -100,10 +100,10 @@
       border-image-outset: 0;
       border-image-repeat: stretch;
       border-color: rgb(153, 153, 153);
-      width: 448px;
-      height: 298px;
-      top: 15.87%;
-      left: 38.92%;
+      top: 15.92%;
+      left: 32.92%;
+      width: 39.3%;
+      height: 185px;
     }
     .gwd-div-1pjy {
       background-color: rgb(0, 0, 0);
@@ -138,7 +138,6 @@
     }
     .gwd-span-1h20 {
       position: absolute;
-      width: 450px;
       font-family: "Maven Pro";
       text-shadow: rgb(0, 0, 0) 0px 0px 2px;
       font-weight: bold;
@@ -146,8 +145,9 @@
       font-size: 27px;
       height: 36px;
       transform-origin: 50% 50% 0px;
-      top: 21px;
-      left: -1px;
+      width: 40%;
+      left: 30%;
+      top: -29.73%;
     }
     .gwd-input-chs1 {
       position: absolute;
@@ -190,9 +190,9 @@
       border-radius: 3px;
       border-width: 1px;
       outline: none;
-      left: 39.29%;
       transition: all 0.15s ease 0s;
-      top: 78.19%;
+      left: 39.37%;
+      top: 111.06%;
     }
     .gwd-button-1gp6:hover {
       box-shadow: white 0px 0px 2px, rgb(239, 239, 239) 0px 0px 10px, darkblue 0px 0px 2px;
@@ -206,19 +206,15 @@
     .gwd-input-m44f {
       top: 38.59%;
     }
-    .gwd-img-1rsy {
-      position: absolute;
-      width: 152px;
-      height: 123px;
-      transform-origin: 50% 50% 0px;
-      top: 70.63%;
-      left: 47.76%;
-    }
     .gwd-input-1nyp {
       top: 49.66%;
     }
     .gwd-input-q5ez {
       top: 26.85%;
+    }
+    .gwd-form-mtk9 {
+      left: 0px;
+      top: 0px;
     }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Maven+Pro:regular,500,600,700,800,900|Damion:regular" rel="stylesheet" type="text/css">
@@ -229,18 +225,16 @@
     <p class="gwd-p-410i gwd-p-9z5y gwd-p-nf6e" onclick="document.location='/'">BACK</p>
     <p class="gwd-p-2ofw">Photogra'</p>
   </div>
-  <div class="gwd-div-1roc"><span class="gwd-span-1h20">SignUp</span>
-    <input name="Email" type="text" id="text_1" placeholder="Email" class="gwd-input-chs1 gwd-input-jcsw gwd-input-q5ez">
-    <input name="Name" type="text" id="text_3" placeholder="Name" class="gwd-input-chs1 gwd-input-jcsw gwd-input-m44f">
-    <input name="Username" type="text" id="text_2" placeholder="Username" class="gwd-input-chs1 gwd-input-1cqz gwd-input-1nyp">
-    <input name="Password" type="Password" id="text_4" placeholder="Password" class="gwd-input-chs1 gwd-input-1cqz gwd-input-1903">
-    <button id="button_1" class="gwd-button-1gp6">OK</button>
-  </div>
+  <form method="POST" class="gwd-form-mtk9">
+    {% csrf_token %}
+    <div class="gwd-div-1roc"> {{ form.as_p }}
+      <span class="gwd-span-1h20">SignUp</span>
+      <button id="button_1" class="gwd-button-1gp6" type="submit">OK</button>
+    </div>
+  </form>
   <div class="gwd-div-1pjy"><span class="gwd-span-1b1l"><span class="gwd-span-xtn6">Contact: Pratchaya-anan.sr.62@ubu.ac.th</span><br>
-    
     </span>
   </div>
-  <img src="static/AW3909994_11.gif" id="AW3909994_11" class="gwd-img-1rsy">
 </body>
 
 </html>

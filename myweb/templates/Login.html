@@ -218,7 +218,8 @@
     <p class="gwd-p-2ofw">Photogra'</p>
   </div>
   <div class="gwd-div-1roc"><span class="gwd-span-1h20">Login</span>
-    <form action="login_active" method="post">{% csrf_token %}
+    <form action="login_active" method="post">
+    {% csrf_token %}
       <input name="Username" type="text" id="text_1" placeholder="Username" class="gwd-input-chs1 gwd-input-jcsw">
       <input name="Password" type="password" id="text_2" placeholder="Password" class="gwd-input-chs1 gwd-input-1cqz">
       <button id="button_1" class="gwd-button-1gp6">OK</button>
