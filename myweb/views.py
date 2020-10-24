@@ -11,6 +11,7 @@ def index(req):
 	else:
 		return render(req, r'index.html')
 
+
 def login(req):
 	return render(req, r'Login.html')
 
@@ -54,3 +55,10 @@ def portrait(req):
 
 def food(req):
     return render(req,"Food.html")
+
+def comment(req):
+    return render(req,"comment.html")
+
+def writer(req):
+    return render(req,"writer.html")
+
